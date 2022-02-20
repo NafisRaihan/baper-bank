@@ -34,7 +34,7 @@
                 Diposit
                </p>
                <p  class="text-white fw-bold fs-4 text-center">
-                   $<span>00</span>
+                   $<span id="total-deposit">00</span>
                </p>
             </div>
               </div>
@@ -44,7 +44,7 @@
                         Withdraw
                        </p>
                        <p class="text-white fw-bold fs-3 text-center">
-                           $<span>00</span>
+                           $<span id="total-withdraw">00</span>
                        </p>
                 </div>
               </div>
@@ -54,7 +54,7 @@
                         Total Balance
                        </p>
                        <p class="text-white fw-bold fs-3 text-center">
-                           $<span>1240</span>
+                           $<span id="total-balance">1240</span>
                        </p>
                 </div>
               </div>
@@ -71,12 +71,15 @@
                        Please deposit
                    </p>
                    <p class="text-center">
-                    <input class="w-75 text-center" type="number" placeholder="Enter the amount you want to deposit">
+                    <input id="deposit-input" class="w-75 text-center" type="number" placeholder="Enter the amount you want to deposit">
                    </p>
                    <p class="text-center">
-                    <button class="btn-primary text-white fw-bold px-4 border rounded fs-5">
+                    <button id="deposit-btn" class="btn-primary text-white fw-bold px-4 border rounded fs-5">
                         Deposit
                     </button>
+                   </p>
+                   <p id="valid-deposit" class="text-center text-danger" style="display: none;">
+                       Please enter a valid amount
                    </p>
                </div>
               </div>
@@ -86,13 +89,16 @@
                         Please withdraw
                     </p>
                     <p class="text-center">
-                        <input class="w-75 text-center" type="number" name="" id="" placeholder="Enter the amount you want to deposit">
+                        <input id="withdraw-input" class="w-75 text-center" type="number" name="" id="" placeholder="Enter the amount you want to deposit">
                     </p>
 
                     <p class="text-center">
-                        <button class="btn-danger text-white fw-bold px-4 border rounded fs-5">
+                        <button id="withdraw-btn" class="btn-danger text-white fw-bold px-4 border rounded fs-5">
                             Withdraw
                         </button>
+                        <p id="valid-withdraw" class="text-center text-danger" style="display: none;">
+                            Please enter a valid amount
+                        </p>
     
                     </p>
                 </div>
